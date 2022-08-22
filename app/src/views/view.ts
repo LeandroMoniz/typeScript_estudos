@@ -14,8 +14,8 @@ export abstract class View<T> {
         }
     }
 
-    @logarTempoDeExecucao(true)
-    @inspect // não precisa passar validação
+   // @logarTempoDeExecucao(true)
+    //@inspect // não precisa passar validação
     public update(model: T): void {
         let template = this.template(model);
         this.elemento.innerHTML = template;
